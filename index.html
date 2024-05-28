@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html style="color-scheme: dark; background-color: #111827;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Music Library
+        </title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <div class="img">
+                    <img src="./img/favicon.png" alt="Navbar_logo">
+                </div>
+                <div class="logo-text">
+                    Music 
+                </div>
+            </div>
+            <div class="ham" >
+                <label for="ham-check">
+                    <div class="ham-img">☰</div>
+                    <div class="ham-close">✖</div>
+                </label>
+                <input type="checkbox" class="ham-check" id="ham-check" hidden/>     
+            </div>
+            <div class="nav-items">
+                <div class="nav-item"><a href="#main">Home</a></div>
+                <div class="nav-item"><a href="#featList">Featured Playlist</a></div>
+                <div class="nav-item"><a href="#recc">Recommendation</a></div>
+                <div class="nav-item"><a href="#review">User Review</a></div>
+            </div>
+        </div>
+        <div class="content-cover">
+            <div class="main" id="main"></div>
+            <div class="featList" id="featList"></div>
+            <div class="recc" id="recc"></div>
+            <div class="review" id="review"></div>
+        </div>
+    </body>
+</html>
