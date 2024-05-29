@@ -1,5 +1,5 @@
 html{
-    scroll-behavior: none;
+    scroll-behavior: smooth;
     color-scheme: dark;
     background-color: #111827;
 }
@@ -10,6 +10,8 @@ body{
     padding-left: none;
     padding: 0px;
 }
+
+/* Navbar CSS start*/
 
 .navbar{
     width: 100vw;
@@ -70,8 +72,11 @@ body{
     padding-left: 1vw;
 }
 
+/* Navbar CSS end*/
+
 .contents-cover{
     height: 100vh;
+    scroll-behavior: smooth;
 }
 
 .nav-buffer{
@@ -93,6 +98,7 @@ body{
     display: none;
 }
 
+/* Main Section CSS start*/
 .main{
     height: 93vh;
     width: 98vw;
@@ -184,10 +190,133 @@ body{
 
 
 .main-right-img{
-    position: absolute;
+    position: relative;
     scale: 0.75;
     filter: opacity(0.75);
 }
+/* Main Section CSS End*/
+/* Featured playlist Section CSS Starts*/
+.featList{
+    height: 93vh;
+    padding-top: 2vh;
+}
+
+.fl-title{
+    height: 8vh;
+    font-size: 5vh;
+    font-weight: bolder;
+    width: 98vw;
+    text-align: center;
+    color: #30C2EC;
+    margin-bottom: 2vh;
+}
+
+.fl-cards-cover{
+    display: flex;
+    width: 96vw;
+    height: 82vh;
+    padding-left: 1rem;
+}
+
+.fl-card{
+    height: 70vh;
+    width: calc(22.5vw - 5rem);
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    flex-direction: column;
+    margin-right: 3rem;
+    padding: 2rem;
+    transition: .25s all ease-in-out;
+}
+
+.fl-card:hover{
+    height: 75vh;
+}
+
+.fl-card-nos-wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.fl-card-nos{
+    background-color: #1e1e2c;
+    font-size: medium;
+    font-weight: bold;
+    height: 100%;
+    width: fit-content;
+}
+
+.fl-card-img-cover{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fl-card-img{
+    display: block;
+    max-height: 40vh;
+    max-width: 20vw;
+    height: auto;
+    width: auto;
+}
+
+.fl-card-name{
+    padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding-bottom: 1.5rem;
+}
+
+.fl-card-fbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fl-card-btn-on{
+    margin-top: 2vh;
+    background-color: #30C2EC;
+    width: 5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fl-card-btn-off{
+    display: none;
+    margin-top: 2vh;
+    background-color: #30C2EC;
+    width: 6rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fl-card:has(input[type="checkbox"]:checked) .fl-card-btn-on{
+    display: none;
+}
+
+.fl-card:has(input[type="checkbox"]:checked) .fl-card-btn-off{
+    display: flex;
+}
+
+/* Featured Playlist section CSS ends */
 
 @media screen and (max-width: 1360px){
     .navbar{
