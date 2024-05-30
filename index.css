@@ -317,6 +317,138 @@ body{
 }
 
 /* Featured Playlist section CSS ends */
+/* Recommeded Albums section CSS starts */
+.recc{
+    height: 93vh;
+    width: 98vw;
+}
+
+.recc-title{
+    font-size: 5vh;
+    height: 7vh;
+    width: 98vw;
+    text-align: center;
+    font-weight: bolder;
+    color: #30C2EC;
+}
+
+.recc-search-bar{
+    height: 7vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recc-search-bar input[type=text]{
+    height: 5vh;
+    width: 50vw;
+    border: solid black 1px;
+    border-radius: 2vw 0vw 0vw 2vw;
+    padding-left: 2vw;
+    font-size: 2vh;
+}
+
+.recc-search-bar button{
+    height: 5vh;
+    width: 5vw;
+    border: solid black 1px;
+    border-radius: 0vw 2vw 2vw 0vw;
+    background-color: #30C2EC;
+    color: white;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+.recc-search-bar button:hover{
+    background-color: #0096ff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.recc-albums-sec{
+    height: 75vh;
+    width: 96vw;
+    display: flex;
+    flex-direction: row;
+    flex-flow: column wrap;
+    padding-top: 4vh;
+    padding-left: 2vw;
+    gap: 2vh;
+}
+
+.recc-album-card{
+    height: 58.5vh;
+    padding: 2rem;
+    width: calc(24vw - 10rem);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.recc-album-card:hover{
+    height: 66vh;
+}
+
+.recc-album-card-img-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: calc(24vw - 10rem);
+}
+
+.recc-album-card-img{
+    display: block;
+    max-width: calc(24vw - 14rem);
+    max-height: 53vh;
+    width: auto;
+    height: auto;
+}
+
+.recc-album-card-title{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.recc-album-card-artist{
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.recc-album-card-btn-cover{
+    margin-top: 5vh;
+    display: none;
+    width: calc(24vw - 10rem);
+    justify-content: center;
+    align-items: center;
+}
+
+.recc-album-card-btn{
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #30C2EC;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition-delay: 1s;
+}
+
+.recc-album-card:hover .recc-album-card-btn-cover{
+    display: flex;
+    transition-delay: 1s;
+} 
+/* Recommeded Albums section CSS ends */
 
 @media screen and (max-width: 1360px){
     .navbar{
