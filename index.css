@@ -396,7 +396,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    min-height: 35vh;
     width: calc(24vw - 10rem);
 }
 
@@ -409,29 +409,36 @@ body{
 }
 
 .recc-album-card-title{
+    min-height: 5vh;
     width: 100%;
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 
-.recc-album-card-desc{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
 
 .recc-album-card-artist{
     width: 100%;
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.25rem;
     font-weight: 500;
-    margin-bottom: 1rem;
     text-align: center;
 }
 
+
+.recc-album-card-desc{
+    width: 100%;
+    min-height: 15vh;
+    max-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .recc-album-card-btn-cover{
-    margin-top: 5vh;
     display: flex;
     width: calc(24vw - 10rem);
     justify-content: center;
