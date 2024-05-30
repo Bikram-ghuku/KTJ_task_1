@@ -377,17 +377,19 @@ body{
 }
 
 .recc-album-card{
-    height: 58.5vh;
+    height: 55vh;
     padding: 2rem;
     width: calc(24vw - 10rem);
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
 }
 
 .recc-album-card:hover{
-    height: 66vh;
+    height: 62vh;
 }
 
 .recc-album-card-img-cover{
@@ -401,7 +403,7 @@ body{
 .recc-album-card-img{
     display: block;
     max-width: calc(24vw - 14rem);
-    max-height: 53vh;
+    max-height: 40vh;
     width: auto;
     height: auto;
 }
@@ -415,6 +417,11 @@ body{
     padding-bottom: 1rem;
 }
 
+.recc-album-card-desc{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
 .recc-album-card-artist{
     width: 100%;
     font-size: 1.25rem;
@@ -425,7 +432,7 @@ body{
 
 .recc-album-card-btn-cover{
     margin-top: 5vh;
-    display: none;
+    display: flex;
     width: calc(24vw - 10rem);
     justify-content: center;
     align-items: center;
@@ -444,10 +451,6 @@ body{
     transition-delay: 1s;
 }
 
-.recc-album-card:hover .recc-album-card-btn-cover{
-    display: flex;
-    transition-delay: 1s;
-} 
 /* Recommeded Albums section CSS ends */
 
 @media screen and (max-width: 1360px){
