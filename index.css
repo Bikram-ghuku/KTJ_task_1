@@ -153,6 +153,11 @@ body{
     padding-top: 1vh;
 }
 
+.main-left-button1:hover{
+    background-color: #0096ff;
+    transition: background-color 0.2s ease-in-out;
+}
+
 .main-left-button1 a{
     text-decoration: none;
     color: white;
@@ -295,6 +300,11 @@ body{
     cursor: pointer;
 }
 
+.fl-card-btn-on:hover{
+    background-color: #0096ff;
+    transition: background-color 0.2s ease-in-out;
+}
+
 .fl-card-btn-off{
     display: none;
     margin-top: 2vh;
@@ -306,6 +316,11 @@ body{
     border-radius: 2rem;
     text-align: center;
     cursor: pointer;
+}
+
+.fl-card-btn-off:hover{
+    background-color: #0096ff;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .fl-card:has(input[type="checkbox"]:checked) .fl-card-btn-on{
