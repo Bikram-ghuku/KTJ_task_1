@@ -90,7 +90,7 @@ body{
     height: 93vh;
 }
 
-.contents > div{
+.contents > section{
     scroll-snap-align: start;
 }
 
@@ -656,6 +656,88 @@ body{
     font-size: 2vh;
 }
 /* Reviews section CSS ends */
+/* Footer section CSS starts */
+.footer{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    height: 93vh;
+    width: 86vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    scroll-snap-stop: always;
+    scroll-snap-align: start;
+}
+
+.footer-po{
+    width: 100%;
+    height: 93vh;
+    grid-column: 1/span 2;
+}
+
+.footer-p2{
+    width: 100%;
+    height: 93vh;
+    grid-column: 3/span 1;
+}
+
+.footer-socials{
+    width: 100%;
+    height: 93vh;
+    grid-column: 4/span 1;
+}
+
+
+.footer-socials-item-img{
+    height: 2vh;
+    width: 2vh;
+}
+
+.footer-socials-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-socials-item a:hover{
+    color: #30C2EC;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-po-wrap, .footer-p2-wrap, .footer-social-wrap{
+    padding-top: 5vh;
+    height: 93vh;
+    width: 100%;
+    gap: 2vh;
+}
+
+.footer-socials-item-button{
+    margin-top: 4vh;
+    height: 5vh;
+    width: 15vh;
+    background-color: #30C2EC;
+    border: none;
+    border-radius: 5vw;
+    font-size: 2vh;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-socials-item-button:hover{
+    background-color: #0096ff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.footer-p2-text a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-p2-text a:hover{
+    color: #30C2EC;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Footer section CSS starts */
 
 @media screen and (max-width: 1360px){
     .navbar{
