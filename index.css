@@ -745,7 +745,11 @@ body{
     color: #30C2EC;
     transition: color 0.2s ease-in-out;
 }
-
+.footer-social-wrap{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
 .footer-po-wrap, .footer-p2-wrap, .footer-social-wrap{
     padding-top: 5vh;
     height: 93vh;
@@ -771,9 +775,20 @@ body{
     transition: background-color 0.2s ease-in-out;
 }
 
+.footer-p2-title, .footer-socials-title, .footer-po-text1{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.footer-p2-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-p2-text a{
     color: white;
     text-decoration: none;
+    font-size: larger;
 }
 
 .footer-p2-text a:hover{
