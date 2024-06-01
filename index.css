@@ -958,5 +958,66 @@ body{
 
 
     /* Featured playlist section end */
-   
+    /* Recommended Section start */
+    .recc-search-bar button{
+        width: 10vw;
+        border-radius: 0% 25% 25% 0%;
+    }
+
+    .recc-albums-sec{
+        flex-direction: column;
+        flex-flow: row wrap;
+    }
+
+    .recc-album-card{
+        height: 27vh;
+        width: 30vw;
+        padding: 1.5rem;
+    }
+
+    .recc-album-card:hover{
+        height: 32vh;
+    }
+
+    .recc-album-card-img-cover{
+        min-height: 15vh;
+        min-width: 25vw;
+    }
+
+    .recc-album-card-img{
+        max-height: 15vh;
+        max-width: 25vw;
+    }
+
+    .recc-album-card-title{
+        min-height: 2.5vh;
+        font-size: 0.75rem;
+        padding: 0vh;
+    }
+
+    .recc-album-card-artist{
+        min-height: 1.75vh;
+        padding: 0vh;
+        font-size: 0.5rem;
+        font-weight: 600;
+    }
+
+    .recc-album-card-desc{
+        font-size: 0.4rem;
+        min-height: 12vh;
+    }
+
+    .recc-album-card-btn-cover{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recc-album-card-btn{
+        min-width: 2rem;
+        font-size: 0.5rem;
+        height: 2.5vh;
+    }
+    /* Recommended Section end */
 }
