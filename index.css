@@ -876,4 +876,87 @@ body{
     .contents-cover{
         overflow-x: hidden;
     }
+    /* Main section begin */
+
+    .main{
+        height: 94vh;
+        width: 96vw;
+        flex-direction: column;
+    }
+    .main-left{
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-right{
+        width: 100vw;
+        height: 54vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scale: 0.4;
+    }
+
+    .main-right-img{
+        z-index: 1;
+        width: 60vw;
+        height: 30vh;
+    }
+
+    .main-left-button1{
+        width: 30vw;
+        font-size: 0.75rem;
+        height: 2rem;
+    }
+
+    .main-left-text2{
+        font-size: 5vh;
+    }
+    /* Main section end */
+    /* Featured playlist section start */
+    .fl-cards-cover{
+        flex-direction: column;
+        flex-flow: row wrap;
+        padding: 0px;
+    }
+
+    .fl-card{
+        height: 35vh;
+        width: 40vw;
+        padding: 0.25rem;
+        margin: 2vw;
+    }
+
+    .fl-card:hover{
+        height: 36vh;
+    }
+
+    .fl-card-nos{
+        font-size: 0.5rem;
+        height: 1vh;
+    }
+
+    .fl-card-name{
+        font-size: 0.75rem;
+        height: 1vh;
+    }
+
+    .fl-card-desc{
+        font-size: 0.5rem;
+        padding-left: 2vw;
+    }
+
+    .fl-card-img-cover{
+        height: 8vh;
+    }
+    .fl-card-img{
+        max-height: 8vh;
+    }
+
+
+    /* Featured playlist section end */
+   
 }
