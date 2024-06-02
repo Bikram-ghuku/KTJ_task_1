@@ -527,6 +527,55 @@ body{
     transition: background-color 0.2s ease-in-out;
 }
 
+.recc-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.recc-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.recc-popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #1e1e2c;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+  
+.recc-popup h2 {
+    margin-top: 0;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.recc-popup .recc-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+.recc-popup .recc-close:hover {
+    color: #0096ff;
+}
+.recc-popup .recc-content {
+    max-height: 30%;
+    overflow: auto;
+}
+
 /* Recommeded Albums section CSS ends */
 /* Reviews section CSS begins */
 .review{
@@ -1023,6 +1072,10 @@ body{
         min-width: 2rem;
         font-size: 0.5rem;
         height: 2.5vh;
+    }
+
+    .recc-popup{
+        width: 70%;
     }
     /* Recommended Section end */
     /* Reviews section starts */
