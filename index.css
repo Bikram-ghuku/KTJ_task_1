@@ -1020,4 +1020,61 @@ body{
         height: 2.5vh;
     }
     /* Recommended Section end */
+    /* Reviews section starts */
+    .review-data-title{
+        height: 5vw;
+        font-size: 1px;
+        width: fit-content;
+        overflow: hidden;
+    }
+
+    .review-data{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .review-data-item{
+        height: 35vh;
+        width: 22vw;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .review-data-item-img-wrapper{
+        padding: 0px;
+        height: 6vh;
+    }
+
+    .review-data-item-img{
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .review-data-item-name{
+        height: 5vh;
+        font-size: 4vw;
+    }
+
+    .review-data-item-email{
+        height: 6vw;
+        font-size: 3vw;
+    }
+
+    .review-data-item-desc{
+        height: 17vw;
+        font-size: 3vw;
+    }
+    
+    .review-data-item-desc{
+        font-size: 2vw;
+    }
+
+    .review-inp-btn-wrapper{
+        width: 50vw;
+    }
+    .review-inp-button{
+        min-width: 30vw;
+    }
+    /* Reviews section ends*/
 }
