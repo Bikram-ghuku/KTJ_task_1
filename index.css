@@ -516,6 +516,10 @@ body{
     text-align: center;
     cursor: pointer;
     transition-delay: 1s;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .recc-album-card-btn:hover{
@@ -910,6 +914,7 @@ body{
         width: 30vw;
         font-size: 0.75rem;
         height: 2rem;
+        position: relative;
     }
 
     .main-left-text2{
