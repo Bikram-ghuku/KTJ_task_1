@@ -1077,4 +1077,77 @@ body{
         min-width: 30vw;
     }
     /* Reviews section ends*/
+    /* Footer Section starts */
+    .footer{
+        max-height: 48vh;
+        width: 100vw;
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 1vh;
+    }
+
+    .footer-po{
+        height: 30vh;
+    }
+
+    .footer-p2{
+        height: 15vh;
+    }
+
+    .footer-socials{
+        height: 45vh;
+    }
+
+    .footer-po-text1{
+        padding: 0px;
+        min-height: 5vh;
+        font-size: 4vh;
+    }
+
+    .footer-po-wrap{
+        padding: 0px;
+        margin: 0px;
+        gap: 0px;
+        height: 15vh;
+    }
+
+    .footer-po-text2{
+        font-size: 1rem;
+        height: 13vh;
+    }
+
+    .footer-po-text3{
+        font-size: 1.5vh;
+        font-weight: 800;
+    }
+
+    .footer-p2-title{
+        min-height: 5vh;
+        font-size: 4vh;
+    }
+
+    .footer-p2-wrap{
+        padding: 0px;
+        margin: 0px;
+        gap: 0px;
+        height: 15vh;
+    }
+
+    .footer-social-title{
+        min-height: 5vh;
+        font-size: 4vh;
+        padding: 0vh;
+        margin: 0vh;
+    }
+
+    .footer-social-wrap{
+        height: 30vh;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .footer-socials-item{
+        font-size: 2vh;
+    }
+    /* Footer Section ends */
 }
