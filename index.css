@@ -1043,7 +1043,8 @@ body{
 
     .review-data-item-img-wrapper{
         padding: 0px;
-        height: 6vh;
+        height: 10vh;
+        margin-top: 5vh;
     }
 
     .review-data-item-img{
@@ -1053,21 +1054,17 @@ body{
 
     .review-data-item-name{
         height: 5vh;
-        font-size: 4vw;
+        font-size: 2rem;
     }
 
     .review-data-item-email{
         height: 6vw;
-        font-size: 3vw;
+        font-size: 1.5rem;
     }
 
     .review-data-item-desc{
         height: 17vw;
-        font-size: 3vw;
-    }
-    
-    .review-data-item-desc{
-        font-size: 2vw;
+        font-size: 1rem;
     }
 
     .review-inp-btn-wrapper{
