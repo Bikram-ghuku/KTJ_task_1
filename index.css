@@ -893,7 +893,7 @@ html:has(#nav-theme-sel-inp:checked){
 
 /* Footer section CSS starts */
 
-@media screen and (max-width: 1360px){
+@media screen and (max-width: 1000px){
     .navbar{
         background-color: var(--background);
         height: 5vh;
@@ -1165,17 +1165,17 @@ html:has(#nav-theme-sel-inp:checked){
 
     .review-data-item-name{
         height: 5vh;
-        font-size: 1rem;
+        font-size: 2vw;
     }
 
     .review-data-item-email{
         height: 6vw;
-        font-size: 0.5rem;
+        font-size: 1.5vw;
     }
 
     .review-data-item-desc{
         height: 17vw;
-        font-size: .325rem;
+        font-size: 1vw;
     }
 
     .review-inp-btn-wrapper{
