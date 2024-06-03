@@ -1,7 +1,10 @@
 html{
+    --font: white;
+    --background: #111827;
+    --theme: dark;
     scroll-behavior: smooth;
-    color-scheme: dark;
-    background-color: #111827;
+    color-scheme: var(--theme);
+    background-color: var(--background);
 }
 
 body{
@@ -26,7 +29,7 @@ body{
 
 .nav-items{
     display: flex;
-    width: 40vw;
+    width: 45vw;
     height: 5vh;
 }
 
@@ -37,8 +40,42 @@ body{
 
 .nav-item a{
     text-decoration: none;
-    color: white;
+    color: var(--font);
     font-weight: bold;
+}
+
+.nav-theme-sel-on, .nav-theme-sel-off{
+    color: var(--font);
+    font-weight: bold;
+}
+
+.nav-theme-sel-on:hover, .nav-theme-sel-off:hover{
+    color: #30C2EC;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-theme-sel-off{
+    display: none;
+}
+
+.nav-theme-sel-on{
+    display: block;
+}
+
+html:has(#nav-theme-sel-inp:checked){
+    color-scheme: light;
+    --font: black;
+    --background: white;
+    --theme: light;
+}
+
+.nav-theme-sel:has(input[type="checkbox"]:checked) .nav-theme-sel-off{
+    display: block;
+}
+
+.nav-theme-sel:has(input[type="checkbox"]:checked) .nav-theme-sel-on{
+    display: none;
 }
 
 .nav-item a:hover{
@@ -335,13 +372,14 @@ body{
     margin-top: 2vh;
     background-color: #30C2EC;
     width: 5rem;
-    height: 1.5rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
     text-align: center;
     cursor: pointer;
+    color: white;
 }
 
 .fl-card-btn-on:hover{
@@ -354,12 +392,13 @@ body{
     margin-top: 2vh;
     background-color: #30C2EC;
     width: 6rem;
-    height: 1.5rem;
+    height: 2.5rem;
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
     text-align: center;
     cursor: pointer;
+    color: white;
 }
 
 .fl-card-btn-off:hover{
@@ -546,7 +585,7 @@ body{
 .recc-popup {
     margin: 70px auto;
     padding: 20px;
-    background: #1e1e2c;
+    background: var(--background);
     border-radius: 5px;
     width: 30%;
     position: relative;
@@ -566,7 +605,7 @@ body{
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    color: #fff;
+    color: var(--font);
 }
 .recc-popup .recc-close:hover {
     color: #0096ff;
@@ -652,6 +691,7 @@ body{
     font-size: 2vh;
     cursor: pointer;
     border-radius: 2vw;
+    color: white;
 }
 
 .review-inp-btn-wrapper{
@@ -792,7 +832,7 @@ body{
 
 .footer-socials-item a{
     text-decoration: none;
-    color: white;
+    color: var(--font);
 }
 
 .footer-socials-item a:hover{
@@ -819,9 +859,10 @@ body{
     border: none;
     border-radius: 5vw;
     font-size: 2vh;
-    color: white;
+    color: var(--font);
     text-align: center;
     cursor: pointer;
+    color: white;
 }
 
 .footer-socials-item-button:hover{
@@ -840,7 +881,7 @@ body{
 }
 
 .footer-p2-text a{
-    color: white;
+    color: var(--font);
     text-decoration: none;
     font-size: larger;
 }
@@ -854,7 +895,7 @@ body{
 
 @media screen and (max-width: 1360px){
     .navbar{
-        background-color: #111827;
+        background-color: var(--background);
         height: 5vh;
     }
     .nav-items{
@@ -917,9 +958,9 @@ body{
         justify-content: center;
         align-items: center;
         width: 100vw;
-        height: 15vh;
+        height: 25vh;
         border: #1A43bf 2px solid;
-        background-color: #111827;
+        background-color: var(--background);
         position: fixed;
         top: 0;
         left: 0;
