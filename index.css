@@ -1221,7 +1221,8 @@ html:has(#nav-theme-sel-inp:checked){
 
     .footer-po-text2{
         font-size: 1rem;
-        height: 13vh;
+        height: 15vh;
+        overflow-y: hidden;
     }
 
     .footer-po-text3{
@@ -1255,7 +1256,20 @@ html:has(#nav-theme-sel-inp:checked){
     }
 
     .footer-socials-item{
-        font-size: 2vh;
+        font-size: 1vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .footer-socials-item img{
+        margin-right: 0.5rem;
+    }
+
+    .footer-socials-item a{
+        margin-left: 1rem;
+        display: flex;
     }
     /* Footer Section ends */
 }
