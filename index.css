@@ -1010,6 +1010,18 @@ html:has(#nav-theme-sel-inp:checked){
     .main-left-text2{
         font-size: 5vh;
     }
+
+    .main-leftBlob{
+        left: 0%;
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .main-rightBlob{
+        left: 40%;
+        height: 15rem;
+        width: 15rem;
+    }
     /* Main section end */
     /* Featured playlist section start */
     .fl-cards-cover{
@@ -1153,17 +1165,17 @@ html:has(#nav-theme-sel-inp:checked){
 
     .review-data-item-name{
         height: 5vh;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .review-data-item-email{
         height: 6vw;
-        font-size: 1.5rem;
+        font-size: 0.5rem;
     }
 
     .review-data-item-desc{
         height: 17vw;
-        font-size: 1rem;
+        font-size: .325rem;
     }
 
     .review-inp-btn-wrapper{
